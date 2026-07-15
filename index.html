@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grimoire — Tarot &amp; Oracle Collection · ALNA IT s. r. o.</title>
+<meta name="description" content="Grimoire — a mobile app to catalogue your tarot and oracle deck collection. Privacy policy and support by ALNA IT s. r. o." />
+<link rel="canonical" href="https://alexlucky26.github.io/grimoire/" />
+<style>
+  :root{
+    --bg:#15110B;
+    --bg-soft:#1D1811;
+    --gold:#C9A24B;
+    --cream:#E8DCC0;
+    --muted:#A79A7E;
+    --line:rgba(201,162,75,.22);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--cream);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:var(--gold)}
+
+  header{text-align:center;padding:72px 0 40px}
+  .emblem{font-size:44px;line-height:1;display:block;margin-bottom:14px}
+  h1{
+    font-size:clamp(38px,9vw,64px);
+    margin:0;
+    letter-spacing:.03em;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .tagline{margin:14px auto 0;max-width:34ch;color:var(--muted);font-size:clamp(15px,4vw,19px);font-style:italic}
+  .rule{width:60px;height:1px;background:var(--gold);opacity:.5;margin:34px auto 0}
+
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  h2{
+    color:var(--gold);
+    font-size:clamp(22px,5vw,28px);
+    font-weight:600;
+    margin:0 0 18px;
+    letter-spacing:.02em;
+  }
+  h3{color:var(--cream);font-size:18px;margin:26px 0 8px;font-weight:600}
+  p{margin:0 0 16px}
+  ul{margin:0 0 16px;padding-left:22px}
+  li{margin:0 0 8px}
+  .muted{color:var(--muted)}
+  strong{color:var(--cream)}
+
+  .card{
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:22px 24px;
+  }
+  .email{font-size:20px;color:var(--gold);word-break:break-all}
+
+  .legal{font-size:14px;color:var(--muted);line-height:1.8}
+
+  footer{text-align:center;padding:48px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer .emblem-sm{color:var(--gold);font-size:20px}
+
+  .policy p, .policy li{color:#DDD0B4}
+  .effective{color:var(--muted);font-size:14px;margin-bottom:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="emblem" aria-hidden="true">🌙</span>
+    <h1>Grimoire</h1>
+    <p class="tagline">Your tarot &amp; oracle collection — catalogued, remembered, and kept close.</p>
+    <div class="rule" role="presentation"></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <p><strong>Grimoire</strong> is a mobile app for collectors of tarot and oracle decks. Photograph your covers, keep notes and prices, build a wishlist, track statistics, and sync your collection across devices, all in one quiet, considered place.</p>
+    <p>Grimoire is available on Android, with iOS to follow.</p>
+    <p class="muted">Grimoire is developed and published by <strong>ALNA IT s. r. o.</strong>, an IT services company based in Bratislava, Slovakia.</p>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, bug reports, or feedback? We read every message.</p>
+    <div class="card">
+      <p style="margin:0 0 6px" class="muted">Contact us at</p>
+      <a class="email" href="mailto:grimoire476@gmail.com">grimoire476@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- PRIVACY POLICY -->
+  <section id="privacy" class="policy">
+    <h2>Privacy Policy</h2>
+    <p class="effective">Effective date: 15 July 2026</p>
+
+    <p>This Privacy Policy explains how <strong>ALNA IT s. r. o.</strong> (“we”, “us”, the “data controller”) handles personal data in the <strong>Grimoire</strong> mobile application. We are based in the European Union and comply with the General Data Protection Regulation (GDPR).</p>
+
+    <h3>Privacy by default</h3>
+    <p>Grimoire works fully <strong>offline and anonymously by default</strong>. Until you choose to sign in, everything you enter stays in a local database <strong>on your device only</strong> and never leaves it. We do not receive it, and no account is required to use the app.</p>
+
+    <h3>What data we collect</h3>
+    <ul>
+      <li><strong>Account email:</strong> only if you choose to sign in (via email or Google Sign-In), so we can sync and restore your collection.</li>
+      <li><strong>Content you create:</strong> deck titles, cover photos, notes, location, prices, wishlist entries, and similar details you add about your collection.</li>
+    </ul>
+    <p>We do not collect data for advertising, and we do not sell personal data.</p>
+
+    <h3>How your data is stored</h3>
+    <ul>
+      <li><strong>Locally (default):</strong> your collection is stored in an on-device SQLite database.</li>
+      <li><strong>In the cloud (only if you sign in):</strong> your data is synced to <strong>Supabase</strong> (Postgres for records and Supabase Storage for cover photos), so it is backed up and available across your devices.</li>
+    </ul>
+
+    <h3>Third-party services</h3>
+    <p>When you enable the relevant features, we rely on these processors:</p>
+    <ul>
+      <li><strong>Supabase:</strong> cloud storage, database, and authentication (used only when you sign in).</li>
+      <li><strong>Google:</strong> Google Sign-In (used only if you sign in with Google).</li>
+      <li><strong>RevenueCat:</strong> processing of in-app purchases and subscriptions (used only if you make a purchase).</li>
+    </ul>
+    <p>Each provider processes data under its own privacy terms and appropriate safeguards.</p>
+
+    <h3>Legal basis</h3>
+    <p>We process your data to perform the service you request (sync, backup, purchases) and, where applicable, on the basis of your consent. You may withdraw consent at any time by signing out or deleting your account.</p>
+
+    <h3>Your GDPR rights</h3>
+    <p>As a user in the EU, you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal data we hold about you;</li>
+      <li><strong>Export</strong> your collection (available as JSON or PDF from within the app);</li>
+      <li><strong>Delete</strong> your account and all associated cloud data, permanently;</li>
+      <li><strong>Rectify</strong> inaccurate data, and to lodge a complaint with a supervisory authority.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the address below.</p>
+
+    <h3>Children</h3>
+    <p>Grimoire is not directed at children under 13, and we do not knowingly collect their personal data.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>We may update this Privacy Policy from time to time. Material changes will be reflected here with an updated effective date.</p>
+
+    <h3>Contact</h3>
+    <p>For any privacy question or request:<br>
+    <a href="mailto:grimoire476@gmail.com">grimoire476@gmail.com</a></p>
+
+    <p class="legal">
+      <strong>Data controller:</strong> ALNA IT s. r. o.<br>
+      Represented by Aleksandr Lukichev<br>
+      Karpatské námestie 7770/10A, 831 06 Bratislava, Slovakia<br>
+      IČO: 57368414 · DIČ: 2122686390
+    </p>
+  </section>
+
+  <footer>
+    <div class="emblem-sm" aria-hidden="true">🌙</div>
+    <p>© 2026 ALNA IT s. r. o. · Bratislava, Slovakia<br>All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
